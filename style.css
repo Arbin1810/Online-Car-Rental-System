@@ -284,6 +284,8 @@ margin-top: 2rem;
     .about-text .btn:hover{
         background: var(--main-color);
     }
+    
+    
     /*MAKING RESPONSIVE*/
     @media (max-width:991px){
         header{
