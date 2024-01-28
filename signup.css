@@ -23,18 +23,19 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added for positioning the image */
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #FFA500; /* Orange color */
 }
 
 .form-group {
@@ -45,14 +46,14 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #555;
+    color: #333; /* Darker text color */
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -63,7 +64,7 @@ button[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #FFA500; /* Orange color */
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -71,7 +72,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #FF8C00; /* Darker shade of orange on hover */
 }
 
 .sign-in-link {
@@ -81,10 +82,22 @@ button[type="submit"]:hover {
 }
 
 .sign-in-link a {
-    color: #007bff;
+    color: #FFA500; /* Orange color */
     text-decoration: none;
 }
 
 .sign-in-link a:hover {
     text-decoration: underline;
+}
+
+.about-img {
+    position: absolute;
+    top: 20px; /* Adjust positioning as needed */
+    right: 20px; /* Adjust positioning as needed */
+}
+
+.about-img img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
 }

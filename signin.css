@@ -16,12 +16,21 @@
     --gradient: linear-gradient(#fe5b3d, #ffac38);
 }
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(img/Car\ Website\ –\ 1@2x.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #D5F0C1;
 }
 h1 {
-    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
 }
 .container {
     max-width: 400px;
@@ -51,4 +60,17 @@ h1 {
 .sign-in-link a {
     color: #007bff;
     text-decoration: none;
+}
+.btn{
+    flex: 1 1 7rem;
+    padding: 8px 34px;
+    border: none;
+    border-radius: 0.2rem;
+    background: #756AB6;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: var(--main-color);
 }
